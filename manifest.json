@@ -1,0 +1,23 @@
+{
+    "name":"Text Vault",
+    "description":"Text Vault",
+    "version":"0.1.0",
+    "author": "anilcanipsalali",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["KeyboardListener.js"]
+        }
+    ],
+    "permissions":[
+        "contextMenus",
+        "scripting",
+        "storage",
+        "declarativeContent",
+        "activeTab"
+    ]
+}
